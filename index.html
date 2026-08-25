@@ -1550,14 +1550,14 @@
                                 <td><strong>Audi RSQ3 Sportback</strong></td>
                                 <td>2.5L Turbo (395 BHP)</td>
                                 <td>5 Seats</td>
-                                <td>25+ Years</td>
+                                <td>21+ Years</td>
                                 <td style="color: var(--accent-gold); font-weight: 700;">£180 / day</td>
                             </tr>
                             <tr>
                                 <td><strong>Range Rover Sport SVR</strong></td>
                                 <td>5.0L V8 (575 BHP)</td>
                                 <td>5 Seats</td>
-                                <td>25+ Years</td>
+                                <td>21+ Years</td>
                                 <td style="color: var(--accent-gold); font-weight: 700;">£300 / day</td>
                             </tr>
                         </tbody>
@@ -1619,7 +1619,7 @@
                         <span>+</span>
                     </button>
                     <div class="faq-body">
-                        Drivers must be 21+ for executive daily hatchbacks and 25+ for high-performance SUVs (RSQ3, SVR) with a license held for at least 2 years.
+                        Drivers must be 21+ for executive daily hatchbacks and for high-performance SUVs (RSQ3, SVR) with a license held for at least 2 years.
                     </div>
                 </div>
 
@@ -2186,12 +2186,12 @@
             let isEligible = false;
             let reason = "";
 
-            if (licenseYears < 2) {
-                reason = "You must have held your license for at least 2 years. Contact us to discuss potential options!";
+            if (licenseYears < 1) {
+                reason = "You must have held your license for at least 1 years. Contact us to discuss potential options!";
             } else if (tier === 'exec' && age < 21) {
-                reason = "You must be 21+ to hire Executive vehicles.";
-            } else if (tier === 'perf' && age < 25) {
-                reason = "You must be 25+ to hire Performance & Supercars.";
+                reason = "You must be 21+ to hire Executive vehicles. Contact us to discuss potential options!";
+            } else if (tier === 'perf' && age < 21) {
+                reason = "You must be 21+ to hire Performance & Supercars. Contact us to discuss potential options!";
             } else {
                 isEligible = true;
             }
